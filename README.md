@@ -22,7 +22,7 @@ you have to set these config value using menuconfig.
 
 ![config-ds1307-1](https://user-images.githubusercontent.com/6020549/59560411-a0ba7800-904c-11e9-96ae-19b8ab390c5e.jpg)
 
-![config_ds1307-2](https://user-images.githubusercontent.com/6020549/59560412-a1530e80-904c-11e9-8fc2-01941b570dc6.jpg
+![config_ds1307-2](https://user-images.githubusercontent.com/6020549/59560457-32c28080-904d-11e9-9676-72a164dcc83e.jpg)
 
 you have to set gpio & NTP Server using menuconfig.   
 
