@@ -59,7 +59,7 @@ you have to change mode using menuconfig.
 
 ---
 
-# Result of 1 week later.   
+# Time difference of 1 week later.   
 
 ![ds1307-1week](https://user-images.githubusercontent.com/6020549/59961700-4e7aca80-9516-11e9-824d-137c5f0b5a2c.jpg)
 
