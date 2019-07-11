@@ -1,8 +1,7 @@
 # esp-idf-ds1307
 DS1307 RTC Driver for esp-idf
 
-I forked from here.   
-https://github.com/UncleRus/esp-idf-lib/tree/master/components/ds1307
+I forked from [here](https://github.com/UncleRus/esp-idf-lib/tree/master/components/ds1307).
 
 ```
 git clone https://github.com/nopnop2002/esp-idf-ds1307
