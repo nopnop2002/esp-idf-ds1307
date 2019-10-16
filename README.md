@@ -17,13 +17,13 @@ make flash
 # Set Clock Mode   
 
 This mode set RTC initial value using NTP time Server.   
-you have to set these config value using menuconfig.   
+You have to set these config value using menuconfig.   
 
 ![config-ds1307-1](https://user-images.githubusercontent.com/6020549/59560411-a0ba7800-904c-11e9-96ae-19b8ab390c5e.jpg)
 
 ![config_ds1307-2](https://user-images.githubusercontent.com/6020549/59560457-32c28080-904d-11e9-9676-72a164dcc83e.jpg)
 
-you have to set gpio & NTP Server using menuconfig.   
+You have to set gpio & NTP Server using menuconfig.   
 
 ![config-ds1307-11](https://user-images.githubusercontent.com/6020549/59560423-b891fc00-904c-11e9-82b0-b1d999840856.jpg)
 
@@ -34,7 +34,7 @@ you have to set gpio & NTP Server using menuconfig.
 # Get Clock Mode   
 
 This mode take out the time from a RTC clock.   
-you have to change mode using menuconfig.   
+You have to change mode using menuconfig.   
 
 ![config-ds1307-11](https://user-images.githubusercontent.com/6020549/59560423-b891fc00-904c-11e9-82b0-b1d999840856.jpg)
 
@@ -48,7 +48,7 @@ you have to change mode using menuconfig.
 
 This mode get time over NTP, and take out the time from a RTC clock.   
 Calculate time difference of NTP and RTC.   
-you have to change mode using menuconfig.   
+You have to change mode using menuconfig.   
 
 ![config-ds1307-11](https://user-images.githubusercontent.com/6020549/59560423-b891fc00-904c-11e9-82b0-b1d999840856.jpg)
 
