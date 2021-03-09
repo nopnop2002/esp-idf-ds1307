@@ -12,8 +12,6 @@ make flash
 
 
 
----
-
 # Set Clock Mode   
 
 This mode set RTC initial value using NTP time Server.   
@@ -29,7 +27,6 @@ You have to set gpio & NTP Server using menuconfig.
 
 ![config-ds1307-12](https://user-images.githubusercontent.com/6020549/59560424-bc258300-904c-11e9-924d-81b3f4f0555f.jpg)
 
----
 
 # Get Clock Mode   
 
@@ -42,7 +39,6 @@ You have to change mode using menuconfig.
 
 ![ds1307-13](https://user-images.githubusercontent.com/6020549/59560432-df503280-904c-11e9-91ba-56148e8b39b3.jpg)
 
----
 
 # Get the time difference of NTP and RTC   
 
@@ -56,7 +52,6 @@ You have to change mode using menuconfig.
 
 ![ds1307-14](https://user-images.githubusercontent.com/6020549/59560436-eb3bf480-904c-11e9-9a9f-3fad2a9903e5.jpg)
 
----
 
 # Time difference of 1 week later.   
 
@@ -65,4 +60,9 @@ You have to change mode using menuconfig.
 # Time difference of 1 month later.   
 
 ![ds1307-1month](https://user-images.githubusercontent.com/6020549/61293381-82dc6080-a80e-11e9-87a2-f4f6aba1efca.jpg)
+
+# Comparison with other RTCs
+This module has a large time lag.   
+I recommend the DS3231 RTC.   
+https://github.com/nopnop2002/esp-idf-ds3231
 
