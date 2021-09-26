@@ -3,14 +3,24 @@ DS1307 RTC Driver for esp-idf
 
 I forked from [here](https://github.com/UncleRus/esp-idf-lib/tree/master/components/ds1307).
 
+# Installation
 ```
 git clone https://github.com/nopnop2002/esp-idf-ds1307
 cd esp-idf-ds1307
-make menuconfig
-make flash
+idf.py menuconfig
+idf.py flash
 ```
 
+# Wireing  
 
+|DS1307||ESP32|
+|:-:|:-:|:-:|
+|SCL|--|GPIO15(*1)|
+|SDA|--|GPIO16(*1)|
+|GND|--|GND|
+|VCC|--|3.3V|
+
+(*1) You can change using menuconfig.   
 
 # Set Clock Mode   
 
