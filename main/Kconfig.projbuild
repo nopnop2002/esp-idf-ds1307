@@ -1,9 +1,22 @@
 menu "DS1307 Configuration"
 
+    config GPIO_RANGE_MAX
+        int
+        default 33 if IDF_TARGET_ESP32
+        default 46 if IDF_TARGET_ESP32S2
+        default 48 if IDF_TARGET_ESP32S3
+        default 18 if IDF_TARGET_ESP32C2
+        default 19 if IDF_TARGET_ESP32C3
+        default 30 if IDF_TARGET_ESP32C6
+        default 27 if IDF_TARGET_ESP32H2
+
     config SCL_GPIO
         int "DS1307 SCL GPIO number"
-        range 0 34
-        default 15
+        range 0 GPIO_RANGE_MAX
+        default 22 if IDF_TARGET_ESP32
+        default  2 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default  2 if IDF_TARGET_ESP32H2
+        default  6 # C3 and others
         help
             GPIO number (IOxx) to DS1307 SCL.
             Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to CS.
@@ -11,8 +24,11 @@ menu "DS1307 Configuration"
 
     config SDA_GPIO
         int "DS1307 SDA GPIO number"
-        range 0 34
-        default 16
+        range 0 GPIO_RANGE_MAX
+        default 21 if IDF_TARGET_ESP32
+        default  1 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default  1 if IDF_TARGET_ESP32H2
+        default  5 # C3 and others
         help
             GPIO number (IOxx) to DS1307 SDA.
             Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to DC.

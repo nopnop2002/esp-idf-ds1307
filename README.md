@@ -12,13 +12,13 @@ idf.py flash
 ```
 
 # Wireing  
+|DS1307||ESP32|ESP32S2/S3/H2|ESP32Cn|
+|:-:|:-:|:-:|:-:|:-:|
+|SCL|--|GPIO22|GPIO02|GPIO06|
+|SDA|--|GPIO21|GPIO01|GPIO05|
+|GND|--|GND|GND|GND|
+|VCC|--|3.3V|3.3V|3.3V|
 
-|DS1307||ESP32|
-|:-:|:-:|:-:|
-|SCL|--|GPIO15(*1)|
-|SDA|--|GPIO16(*1)|
-|GND|--|GND|
-|VCC|--|3.3V|
 
 (*1) You can change using menuconfig.   
 
