@@ -26,7 +26,7 @@ idf.py flash
 |GND|--|GND|GND|GND|
 |VCC|--|3.3V|3.3V|3.3V|
 
-You can change using menuconfig.   
+You can change GPIO using menuconfig.   
 
 # Set Clock Mode   
 
