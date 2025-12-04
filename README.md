@@ -1,10 +1,17 @@
 # esp-idf-ds1307
 DS1307 RTC Driver for esp-idf
 
-I forked from [here](https://github.com/UncleRus/esp-idf-lib/tree/master/components/ds1307).
+# Software requirements
+ESP-IDF V5.0 or later.   
+ESP-IDF V4.4 release branch reached EOL in July 2024.   
+ESP-IDF V5.1 is required when using ESP32-C6.   
+
+__Note for ESP-IDF V5.2.__   
+A new i2c driver is now available in ESP-IDF V5.2.   
+Under ESP-IDF V5.2 or later, this project uses a new i2c driver.   
 
 # Installation
-```
+```Shell
 git clone https://github.com/nopnop2002/esp-idf-ds1307
 cd esp-idf-ds1307
 idf.py menuconfig
@@ -27,15 +34,13 @@ idf.py flash
 This mode set RTC initial value using NTP time Server.   
 You have to set these config value using menuconfig.   
 
-![config-ds1307-1](https://user-images.githubusercontent.com/6020549/59560411-a0ba7800-904c-11e9-96ae-19b8ab390c5e.jpg)
-
-![config_ds1307-2](https://user-images.githubusercontent.com/6020549/59560457-32c28080-904d-11e9-9676-72a164dcc83e.jpg)
+![Image](https://github.com/user-attachments/assets/3ed8258e-0ccf-4b42-beb5-324b7c2cbe44)
+![Image](https://github.com/user-attachments/assets/97c028d8-564b-4f1a-8a4b-7751e6ec51ab)
 
 You have to set gpio & NTP Server using menuconfig.   
 
-![config-ds1307-11](https://user-images.githubusercontent.com/6020549/59560423-b891fc00-904c-11e9-82b0-b1d999840856.jpg)
-
-![config-ds1307-12](https://user-images.githubusercontent.com/6020549/59560424-bc258300-904c-11e9-924d-81b3f4f0555f.jpg)
+![Image](https://github.com/user-attachments/assets/a4f714c2-e708-4dd2-97e2-26384c518213)
+![Image](https://github.com/user-attachments/assets/d5371964-7e28-4cd5-8892-edd055fe92b9)
 
 
 # Get Clock Mode   
@@ -43,10 +48,8 @@ You have to set gpio & NTP Server using menuconfig.
 This mode take out the time from a RTC clock.   
 You have to change mode using menuconfig.   
 
-![config-ds1307-11](https://user-images.githubusercontent.com/6020549/59560423-b891fc00-904c-11e9-82b0-b1d999840856.jpg)
-
-![config-ds1307-13](https://user-images.githubusercontent.com/6020549/59560426-ce9fbc80-904c-11e9-9c6f-3701054df1c9.jpg)
-
+![Image](https://github.com/user-attachments/assets/a4f714c2-e708-4dd2-97e2-26384c518213)
+![Image](https://github.com/user-attachments/assets/0fd6aeb3-1fc2-45e5-9984-e22e69a86d11)
 ![ds1307-13](https://user-images.githubusercontent.com/6020549/59560432-df503280-904c-11e9-91ba-56148e8b39b3.jpg)
 
 
@@ -56,10 +59,8 @@ This mode get time over NTP, and take out the time from a RTC clock.
 Calculate time difference of NTP and RTC.   
 You have to change mode using menuconfig.   
 
-![config-ds1307-11](https://user-images.githubusercontent.com/6020549/59560423-b891fc00-904c-11e9-82b0-b1d999840856.jpg)
-
-![config-ds1307-14](https://user-images.githubusercontent.com/6020549/59560428-d7908e00-904c-11e9-94f7-75e6e6023caf.jpg)
-
+![Image](https://github.com/user-attachments/assets/a4f714c2-e708-4dd2-97e2-26384c518213)
+![Image](https://github.com/user-attachments/assets/0889ee5e-a08a-49f4-b6d3-6b5633cc7ffb)
 ![ds1307-14](https://user-images.githubusercontent.com/6020549/59560436-eb3bf480-904c-11e9-9a9f-3fad2a9903e5.jpg)
 
 
