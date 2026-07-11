@@ -19,7 +19,7 @@ idf.py flash
 ```
 
 # Wireing  
-|DS1307||ESP32|ESP32S2/S3|ESP32Cx/Hx|
+|DS1307||ESP32|ESP32S2/S3|ESP32Cx|
 |:-:|:-:|:-:|:-:|:-:|
 |SCL|--|GPIO22|GPIO02|GPIO06|
 |SDA|--|GPIO21|GPIO01|GPIO05|
